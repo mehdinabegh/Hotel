@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            direction: rtl;
+            background-image: url(image/6.jpg);
+            background-size: cover;
+        }
+        #register{
+            border: 2px solid #ddd;
+            width: 500px;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 50px auto; 
+            background-color: rgb(123,166,184,0.6);
+            color: aliceblue;
+        }
+        #register h2,
+        #register p {
+            text-align: center;
+        }
+        #register input ,
+        #register select {
+            display: block;
+            width: 90%;
+            padding:10px ;
+            margin:20px auto ;
+            font-size: 17px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+
+        }
+        p{
+            font-weight: 700;
+        }
+        #btn-submit{
+            background: #333;
+            color: #fff;
+        }
+        #btn-submit:hover{
+            background: rgb(138, 94, 94);
+        }
+    </style>
+</head>
+<body>
+    <form id="register" action="#">
+        <h2>فرم ثبت نام</h2>
+        <p>لطفا فرم زیر را به دقت پر کنید.</p>
+        <input type="text" placeholder="نام کاربری">
+        <input type="password" placeholder="رمز عبور">
+        <input type="email" placeholder="ایمیل">
+        <input type="text" placeholder="موبایل">
+        <select name="" id="">
+            <option>نحوی آشنایی</option>
+            <option value="0">گوگل</option>
+            <option value="1">اینستا</option>
+            <option value="2">دوستان</option>
+        </select>
+        <input id="btn-submit" type="submit" value="ارسال" >
+    </form>
+</body>
+</html>
